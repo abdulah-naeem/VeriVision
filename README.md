@@ -34,8 +34,8 @@ pip install -r requirements.txt
 ```
 
 ### 3. Add Model Weights
-Because deep learning weights exceed GitHub's standard file limits, the `best_model.pth` file is not included in this repository. 
-* Place your pre-trained `best_model.pth` file directly into the root `VeriVision` directory before running the app.
+Because deep learning weights exceed GitHub's standard file limits, the `VeriVision.pth` file is not included in this repository. 
+* Place your pre-trained `VeriVision.pth` file directly into the root `VeriVision` directory before running the app.
 
 ### 4. Launch the Decentralized App (DApp)
 ```bash
@@ -57,7 +57,7 @@ streamlit run verivision_app.py
 To deploy this application publicly for your research presentation, **Hugging Face Spaces** is highly recommended:
 1. Create a free account at [Hugging Face](https://huggingface.co/).
 2. Create a new **Space** and select **Streamlit** as the SDK.
-3. Upload the 5 core files: `verivision_app.py`, `verivision_ai.py`, `verivision_blockchain.py`, `requirements.txt`, and your `best_model.pth`.
+3. Upload the 5 core files: `verivision_app.py`, `verivision_ai.py`, `verivision_blockchain.py`, `requirements.txt`, and your `VeriVision.pth`.
 4. Hugging Face will automatically build the environment, install PyTorch, and host your Web3 dashboard live on the internet!
 
 ---

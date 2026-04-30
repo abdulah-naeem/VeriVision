@@ -5,7 +5,7 @@ import torchvision.models as models
 import numpy as np
 
 class VeriVisionAI:
-    def __init__(self, model_path='best_model.pth'):
+    def __init__(self, model_path='VeriVision.pth'):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.feature_extractor = self._load_model(model_path)
         self.val_tf = self._get_transforms()
