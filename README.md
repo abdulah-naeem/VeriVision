@@ -39,7 +39,6 @@ Place your pre-trained `VeriVision.pth` file directly into the root directory be
 ### 4. Setup Cloud Persistence (Optional but Recommended)
 1. Create a free **M0 Cluster** at [MongoDB Atlas](https://www.mongodb.com/).
 2. Copy `.env.example` to `.env` and fill in your `MONGO_URI`.
-3. If you have existing local data, run: `python migrate_to_mongodb.py`
 
 ### 5. Launch the DApp
 ```bash
@@ -55,14 +54,6 @@ VeriVision verifies the entire blockchain integrity on every launch. If any bloc
 1. Identify the exact point of the breach.
 2. Truncate the chain to the last valid block.
 3. Overwrite the corrupted database state with the clean, recovered ledger.
-
-### Simulating an Attack
-To test the security system, run the included simulation script:
-```bash
-python simulate_attack.py
-```
-Then restart the app to see the "Auto-Healing" protocol in action.
-
 ---
 
 ## 🌍 Production Deployment (Hugging Face)
