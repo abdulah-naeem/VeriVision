@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+venv/
+env/
+
+# Deep Learning / AI
+*.pth
+*.pt
+*.h5
+*.onnx
+
+# VeriVision Data (Crucial for Privacy & Resetting)
+data/
+mock_ipfs/
+blockchain_state.json
+authorized_nodes.json
+user_accounts.json
+node_private_key.pem
+
+# IDE / OS
+.vscode/
+.DS_Store
+*.ipynb_checkpoints/
+
+# Sensitive Research & Development Files (Do not deploy!)
+*.tex
+*.ipynb
+create_test_samples.py
+test_media/
